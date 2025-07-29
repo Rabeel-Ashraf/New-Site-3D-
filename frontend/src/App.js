@@ -103,10 +103,10 @@ function App() {
           <Header />
           <main role="main">
             <EnhancedHero />
-            <About />
+            <EnhancedAbout />
             <Skills />
-            <Projects />
-            <Contact />
+            <EnhancedProjects />
+            <EnhancedContact />
           </main>
           <Footer />
         </div>
