@@ -3,10 +3,10 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import EnhancedHero from './components/EnhancedHero';
-import About from './components/About';
+import EnhancedAbout from './components/EnhancedAbout';
 import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import EnhancedProjects from './components/EnhancedProjects';
+import EnhancedContact from './components/EnhancedContact';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
