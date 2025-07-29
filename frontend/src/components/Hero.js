@@ -263,12 +263,68 @@ const Hero = () => {
           50% { transform: rotate(12deg) translateY(-10px); }
         }
         
+        @keyframes float-museum {
+          0%, 100% { transform: rotate(12deg) translateY(0px) rotateX(5deg); }
+          50% { transform: rotate(12deg) translateY(-8px) rotateX(-5deg); }
+        }
+        
+        @keyframes ring-glow {
+          0%, 100% { box-shadow: 0 0 20px rgba(218, 255, 1, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.1); }
+          50% { box-shadow: 0 0 40px rgba(218, 255, 1, 0.6), inset 0 0 30px rgba(255, 255, 255, 0.2); }
+        }
+        
+        @keyframes glass-shimmer {
+          0% { background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(218,255,1,0.1)); }
+          50% { background: linear-gradient(45deg, rgba(218,255,1,0.2), rgba(255,255,255,0.2)); }
+          100% { background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(218,255,1,0.1)); }
+        }
+        
+        @keyframes scan {
+          0% { transform: translateX(-100%); opacity: 0; }
+          50% { opacity: 1; }
+          100% { transform: translateX(100%); opacity: 0; }
+        }
+        
+        @keyframes float-particle {
+          0%, 100% { transform: translateY(0px) rotateZ(0deg); }
+          33% { transform: translateY(-6px) rotateZ(120deg); }
+          66% { transform: translateY(3px) rotateZ(240deg); }
+        }
+        
         .animate-spin-slow {
           animation: spin-slow 20s linear infinite;
         }
         
+        .animate-float-museum {
+          animation: float-museum 8s ease-in-out infinite;
+        }
+        
+        .animate-ring-glow {
+          animation: ring-glow 3s ease-in-out infinite;
+        }
+        
+        .animate-glass-shimmer {
+          animation: glass-shimmer 4s ease-in-out infinite;
+        }
+        
+        .animate-scan {
+          animation: scan 3s linear infinite;
+        }
+        
+        .animate-float-particle {
+          animation: float-particle 4s ease-in-out infinite;
+        }
+        
         .animate-float {
           animation: float 6s ease-in-out infinite;
+        }
+        
+        .perspective-1000 {
+          perspective: 1000px;
+        }
+        
+        .bg-gradient-radial {
+          background: radial-gradient(circle, var(--tw-gradient-stops));
         }
       `}</style>
     </section>
