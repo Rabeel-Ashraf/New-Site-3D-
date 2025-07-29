@@ -1,0 +1,32 @@
+{
+  "short_name": "Rabeel Ashraf",
+  "name": "Rabeel Ashraf - AI Engineer & Owner of OrionixLabs",
+  "description": "Professional portfolio showcasing AI engineering projects, automation solutions, and futuristic web development work by Rabeel Ashraf based in Dubai.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#DAFF01",
+  "background_color": "#000000",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "technology", "artificial-intelligence"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "id": "rabeel-ashraf-portfolio"
+}
