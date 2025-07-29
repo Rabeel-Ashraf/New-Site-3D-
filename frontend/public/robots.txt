@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rabeel.world/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Specific directives for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block any unwanted crawlers
+User-agent: BadBot
+Disallow: /
+
+# Important pages for indexing
+Allow: /
+Allow: /about
+Allow: /skills  
+Allow: /projects
+Allow: /contact
