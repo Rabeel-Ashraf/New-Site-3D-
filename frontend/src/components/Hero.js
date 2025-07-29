@@ -186,10 +186,61 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Dubai Museum Placeholder */}
-        <div className="absolute left-8 bottom-20 hidden lg:block">
-          <div className="w-32 h-40 bg-gradient-to-t from-gray-800 to-[#DAFF01]/20 rounded-t-full transform rotate-12 animate-float shadow-xl shadow-[#DAFF01]/10">
-            <div className="absolute inset-2 bg-gradient-to-t from-gray-700 to-transparent rounded-t-full opacity-80"></div>
+        {/* Dubai Future Museum - Realistic 3D */}
+        <div className="absolute left-8 bottom-20 hidden lg:block perspective-1000">
+          <div className="relative transform rotate-12 animate-float-museum">
+            {/* Main Museum Structure */}
+            <div className="relative w-40 h-48">
+              {/* Base/Foundation */}
+              <div className="absolute bottom-0 w-full h-16 bg-gradient-to-t from-gray-700 via-gray-600 to-gray-500 rounded-b-lg shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+              </div>
+              
+              {/* Main Torus Ring */}
+              <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 w-36 h-24 border-8 border-gray-300 rounded-full bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400 shadow-2xl shadow-black/50 animate-ring-glow">
+                {/* Inner Ring Detail */}
+                <div className="absolute inset-2 border-2 border-gray-400 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 opacity-80"></div>
+                
+                {/* Ring Segments */}
+                <div className="absolute top-0 left-1/4 w-2 h-full bg-gradient-to-b from-[#DAFF01]/30 to-transparent rounded-full animate-pulse"></div>
+                <div className="absolute top-0 right-1/4 w-2 h-full bg-gradient-to-b from-blue-400/30 to-transparent rounded-full animate-pulse delay-500"></div>
+                
+                {/* LED Strip Effect */}
+                <div className="absolute inset-0 rounded-full border-2 border-[#DAFF01]/20 animate-spin-slow"></div>
+              </div>
+              
+              {/* Top Ring Section */}
+              <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 h-20 border-6 border-gray-400 rounded-full bg-gradient-to-br from-gray-300 to-gray-500 shadow-xl opacity-90">
+                <div className="absolute inset-1 border border-gray-500 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 opacity-70"></div>
+              </div>
+              
+              {/* Glass Panels Effect */}
+              <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-28 h-16 bg-gradient-to-br from-blue-200/20 to-cyan-200/20 rounded-full backdrop-blur-sm border border-white/20 animate-glass-shimmer"></div>
+              
+              {/* Architectural Details */}
+              <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-4 h-8 bg-gradient-to-t from-gray-600 to-gray-400 rounded-t-lg shadow-lg"></div>
+              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-6 h-4 bg-gradient-to-t from-gray-500 to-gray-300 rounded-t-lg shadow-md"></div>
+              
+              {/* Futuristic Glow Effects */}
+              <div className="absolute inset-0 bg-gradient-radial from-[#DAFF01]/10 via-transparent to-transparent rounded-full animate-pulse"></div>
+              <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 w-40 h-2 bg-[#DAFF01]/30 rounded-full blur-sm animate-pulse"></div>
+              
+              {/* Holographic Grid Lines */}
+              <div className="absolute inset-0 opacity-20">
+                <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-scan"></div>
+                <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#DAFF01] to-transparent animate-scan delay-1000"></div>
+                <div className="absolute top-3/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-scan delay-2000"></div>
+              </div>
+              
+              {/* Floating Particles Around Museum */}
+              <div className="absolute -top-2 -left-2 w-1 h-1 bg-[#DAFF01] rounded-full animate-float-particle"></div>
+              <div className="absolute -top-4 right-4 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-float-particle delay-500"></div>
+              <div className="absolute bottom-8 -right-3 w-1 h-1 bg-blue-400 rounded-full animate-float-particle delay-1000"></div>
+              <div className="absolute top-1/3 -left-4 w-0.5 h-0.5 bg-white rounded-full animate-float-particle delay-1500"></div>
+            </div>
+            
+            {/* Ground Shadow */}
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-48 h-8 bg-black/20 rounded-full blur-xl"></div>
           </div>
         </div>
       </div>
